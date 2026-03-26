@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/panelRoot"
+    android:layout_width="280dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="@drawable/bg_overlay_glass"
+    android:elevation="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+        
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="CyberSaathi Controls"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/panelStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_status_safe"
+            android:paddingLeft="10dp"
+            android:paddingTop="4dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="4dp"
+            android:text="SAFE"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/panelEnglish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="System ready for analysis."
+        android:textColor="#B3FFFFFF"
+        android:textSize="14sp"
+        android:layout_marginBottom="20dp" />
+
+    <Button
+        android:id="@+id/startListeningButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#00E5FF"
+        android:textColor="#121212"
+        android:textStyle="bold"
+        android:text="Start AI Monitoring"
+        android:layout_marginBottom="10dp"
+        android:elevation="0dp"/>
+
+    <Button
+        android:id="@+id/showTranscriptButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#444444"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:text="Show Live Transcript"
+        android:layout_marginBottom="10dp"
+        android:elevation="0dp"/>
+
+    <Button
+        android:id="@+id/stopListeningButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#8E2F25"
+        android:textColor="#FFFFFF"
+        android:text="Stop Analysis"
+        android:layout_marginBottom="10dp"
+        android:elevation="0dp"/>
+
+    <Button
+        android:id="@+id/closePanelButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:backgroundTint="#121212"
+        android:textColor="#88FFFFFF"
+        android:text="Hide Menu"
+        android:elevation="0dp"/>
+</LinearLayout>
